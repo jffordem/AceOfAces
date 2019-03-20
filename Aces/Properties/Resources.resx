@@ -1,0 +1,790 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="allies_1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\allies_1.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="allies_2" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\allies_2.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="allies_3" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\allies_3.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="allies_4" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\allies_4.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="allies_5" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\allies_5.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="allies_6" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\allies_6.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="allies_7" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\allies_7.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="allies_8" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\allies_8.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="allies_9" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\allies_9.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="allies_10" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\allies_10.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="allies_11" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\allies_11.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="allies_12" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\allies_12.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="allies_13" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\allies_13.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="allies_14" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\allies_14.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="allies_15" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\allies_15.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="allies_16" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\allies_16.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="allies_17" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\allies_17.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="allies_18" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\allies_18.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="allies_19" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\allies_19.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="allies_20" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\allies_20.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="allies_21" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\allies_21.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="allies_22" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\allies_22.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="allies_23" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\allies_23.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="allies_24" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\allies_24.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="allies_25" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\allies_25.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="allies_26" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\allies_26.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="allies_27" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\allies_27.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="allies_28" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\allies_28.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="allies_29" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\allies_29.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="allies_30" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\allies_30.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="allies_31" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\allies_31.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="allies_32" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\allies_32.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="allies_33" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\allies_33.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="allies_34" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\allies_34.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="allies_35" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\allies_35.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="allies_36" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\allies_36.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="allies_37" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\allies_37.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="allies_38" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\allies_38.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="allies_39" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\allies_39.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="allies_40" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\allies_40.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="allies_41" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\allies_41.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="allies_42" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\allies_42.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="allies_43" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\allies_43.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="allies_44" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\allies_44.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="allies_45" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\allies_45.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="allies_46" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\allies_46.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="allies_47" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\allies_47.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="allies_48" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\allies_48.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="allies_49" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\allies_49.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="allies_50" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\allies_50.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="allies_51" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\allies_51.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="allies_52" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\allies_52.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="allies_53" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\allies_53.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="allies_54" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\allies_54.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="allies_55" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\allies_55.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="allies_56" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\allies_56.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="allies_57" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\allies_57.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="allies_58" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\allies_58.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="allies_59" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\allies_59.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="allies_60" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\allies_60.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="allies_61" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\allies_61.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="allies_62" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\allies_62.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="allies_63" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\allies_63.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="allies_64" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\allies_64.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="allies_65" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\allies_65.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="allies_66" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\allies_66.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="allies_67" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\allies_67.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="allies_68" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\allies_68.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="allies_69" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\allies_69.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="allies_70" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\allies_70.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="allies_71" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\allies_71.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="allies_72" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\allies_72.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="allies_73" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\allies_73.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="allies_74" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\allies_74.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="allies_75" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\allies_75.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="allies_76" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\allies_76.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="allies_77" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\allies_77.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="allies_78" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\allies_78.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="allies_79" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\allies_79.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="allies_80" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\allies_80.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="allies_81" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\allies_81.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="allies_82" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\allies_82.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="allies_83" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\allies_83.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="allies_84" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\allies_84.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="allies_85" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\allies_85.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="allies_86" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\allies_86.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="allies_87" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\allies_87.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="allies_88" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\allies_88.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="allies_89" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\allies_89.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="allies_90" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\allies_90.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="allies_91" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\allies_91.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="allies_92" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\allies_92.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="allies_93" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\allies_93.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="allies_94" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\allies_94.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="allies_95" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\allies_95.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="allies_96" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\allies_96.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="allies_97" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\allies_97.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="allies_98" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\allies_98.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="allies_99" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\allies_99.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="allies_100" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\allies_100.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="allies_101" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\allies_101.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="allies_102" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\allies_102.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="allies_103" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\allies_103.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="allies_104" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\allies_104.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="allies_105" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\allies_105.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="allies_106" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\allies_106.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="allies_107" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\allies_107.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="allies_108" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\allies_108.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="allies_109" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\allies_109.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="allies_110" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\allies_110.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="allies_111" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\allies_111.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="allies_112" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\allies_112.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="allies_113" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\allies_113.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="allies_114" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\allies_114.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="allies_115" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\allies_115.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="allies_116" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\allies_116.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="allies_117" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\allies_117.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="allies_118" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\allies_118.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="allies_119" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\allies_119.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="allies_120" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\allies_120.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="allies_121" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\allies_121.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="allies_122" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\allies_122.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="allies_123" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\allies_123.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="allies_124" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\allies_124.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="allies_125" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\allies_125.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="allies_126" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\allies_126.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="allies_127" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\allies_127.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="allies_128" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\allies_128.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="allies_129" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\allies_129.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="allies_130" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\allies_130.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="allies_131" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\allies_131.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="allies_132" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\allies_132.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="allies_133" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\allies_133.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="allies_134" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\allies_134.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="allies_135" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\allies_135.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="allies_136" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\allies_136.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="allies_137" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\allies_137.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="allies_138" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\allies_138.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="allies_139" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\allies_139.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="allies_140" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\allies_140.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="allies_141" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\allies_141.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="allies_142" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\allies_142.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="allies_143" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\allies_143.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="allies_144" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\allies_144.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="allies_145" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\allies_145.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="allies_146" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\allies_146.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="allies_147" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\allies_147.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="allies_148" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\allies_148.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="allies_149" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\allies_149.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="allies_150" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\allies_150.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="allies_151" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\allies_151.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="allies_152" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\allies_152.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="allies_153" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\allies_153.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="allies_154" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\allies_154.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="allies_155" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\allies_155.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="allies_156" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\allies_156.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="allies_157" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\allies_157.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="allies_158" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\allies_158.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="allies_159" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\allies_159.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="allies_160" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\allies_160.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="allies_161" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\allies_161.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="allies_162" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\allies_162.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="allies_163" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\allies_163.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="allies_164" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\allies_164.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="allies_165" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\allies_165.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="allies_166" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\allies_166.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="allies_167" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\allies_167.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="allies_168" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\allies_168.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="allies_169" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\allies_169.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="allies_170" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\allies_170.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="allies_171" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\allies_171.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="allies_172" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\allies_172.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="allies_173" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\allies_173.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="allies_174" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\allies_174.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="allies_175" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\allies_175.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="allies_176" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\allies_176.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="allies_177" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\allies_177.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="allies_178" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\allies_178.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="allies_179" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\allies_179.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="allies_180" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\allies_180.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="allies_181" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\allies_181.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="allies_182" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\allies_182.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="allies_183" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\allies_183.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="allies_184" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\allies_184.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="allies_185" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\allies_185.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="allies_186" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\allies_186.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="allies_187" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\allies_187.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="allies_188" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\allies_188.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="allies_189" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\allies_189.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="allies_190" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\allies_190.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="allies_191" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\allies_191.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="allies_192" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\allies_192.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="allies_193" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\allies_193.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="allies_194" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\allies_194.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="allies_195" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\allies_195.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="allies_196" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\allies_196.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="allies_197" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\allies_197.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="allies_198" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\allies_198.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="allies_199" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\allies_199.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="allies_200" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\allies_200.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="allies_201" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\allies_201.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="allies_202" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\allies_202.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="allies_203" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\allies_203.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="allies_204" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\allies_204.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="allies_205" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\allies_205.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="allies_206" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\allies_206.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="allies_207" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\allies_207.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="allies_208" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\allies_208.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="allies_209" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\allies_209.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="allies_210" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\allies_210.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="allies_211" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\allies_211.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="allies_212" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\allies_212.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="allies_213" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\allies_213.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="allies_214" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\allies_214.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="allies_215" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\allies_215.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="allies_216" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\allies_216.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="allies_217" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\allies_217.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="allies_218" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\allies_218.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="allies_219" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\allies_219.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="allies_220" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\allies_220.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="allies_221" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\allies_221.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="allies_222" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\allies_222.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="allies_223" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\allies_223.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+</root>

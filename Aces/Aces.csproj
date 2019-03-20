@@ -1,0 +1,784 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{B591095D-29D9-4CEA-81E8-BAE39C31AD6E}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Aces</RootNamespace>
+    <AssemblyName>Aces</AssemblyName>
+    <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Book.cs" />
+    <Compile Include="EnemyAce.cs" />
+    <Compile Include="EnemyPilot.cs" />
+    <Compile Include="Human.cs" />
+    <Compile Include="InputPageDialogBox.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="InputPageDialogBox.Designer.cs">
+      <DependentUpon>InputPageDialogBox.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MainForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MainForm.Designer.cs">
+      <DependentUpon>MainForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Maneuvers.cs" />
+    <Compile Include="Pilot.cs" />
+    <Compile Include="Player.cs" />
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Trainer.cs" />
+    <EmbeddedResource Include="InputPageDialogBox.resx">
+      <DependentUpon>InputPageDialogBox.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MainForm.resx">
+      <DependentUpon>MainForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\allies_1.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\allies_2.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\allies_3.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\allies_4.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\allies_5.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\allies_6.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\allies_7.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\allies_8.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\allies_9.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\allies_10.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\allies_11.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\allies_12.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\allies_13.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\allies_14.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\allies_15.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\allies_16.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\allies_17.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\allies_18.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\allies_19.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\allies_20.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\allies_21.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\allies_22.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\allies_23.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\allies_24.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\allies_25.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\allies_26.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\allies_27.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\allies_28.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\allies_29.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\allies_30.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\allies_31.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\allies_32.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\allies_33.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\allies_34.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\allies_35.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\allies_36.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\allies_37.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\allies_38.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\allies_39.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\allies_40.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\allies_41.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\allies_42.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\allies_43.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\allies_44.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\allies_45.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\allies_46.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\allies_47.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\allies_48.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\allies_49.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\allies_50.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\allies_51.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\allies_52.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\allies_53.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\allies_54.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\allies_55.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\allies_56.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\allies_57.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\allies_58.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\allies_59.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\allies_60.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\allies_61.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\allies_62.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\allies_63.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\allies_64.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\allies_65.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\allies_66.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\allies_67.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\allies_68.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\allies_69.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\allies_70.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\allies_71.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\allies_72.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\allies_73.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\allies_74.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\allies_75.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\allies_76.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\allies_77.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\allies_78.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\allies_79.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\allies_80.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\allies_81.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\allies_82.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\allies_83.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\allies_84.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\allies_85.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\allies_86.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\allies_87.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\allies_88.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\allies_89.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\allies_90.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\allies_91.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\allies_92.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\allies_93.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\allies_94.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\allies_95.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\allies_96.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\allies_97.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\allies_98.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\allies_99.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\allies_100.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\allies_101.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\allies_102.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\allies_103.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\allies_104.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\allies_105.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\allies_106.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\allies_107.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\allies_108.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\allies_109.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\allies_110.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\allies_111.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\allies_112.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\allies_113.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\allies_114.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\allies_115.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\allies_116.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\allies_117.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\allies_118.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\allies_119.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\allies_120.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\allies_121.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\allies_122.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\allies_123.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\allies_124.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\allies_125.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\allies_126.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\allies_127.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\allies_128.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\allies_129.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\allies_130.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\allies_131.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\allies_132.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\allies_133.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\allies_134.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\allies_135.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\allies_136.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\allies_137.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\allies_138.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\allies_139.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\allies_140.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\allies_141.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\allies_142.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\allies_143.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\allies_144.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\allies_145.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\allies_146.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\allies_147.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\allies_148.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\allies_149.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\allies_150.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\allies_151.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\allies_152.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\allies_153.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\allies_154.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\allies_155.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\allies_156.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\allies_157.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\allies_158.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\allies_159.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\allies_160.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\allies_161.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\allies_162.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\allies_163.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\allies_164.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\allies_165.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\allies_166.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\allies_167.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\allies_168.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\allies_169.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\allies_170.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\allies_171.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\allies_172.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\allies_173.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\allies_174.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\allies_175.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\allies_176.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\allies_177.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\allies_178.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\allies_179.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\allies_180.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\allies_181.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\allies_182.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\allies_183.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\allies_184.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\allies_185.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\allies_186.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\allies_187.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\allies_188.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\allies_189.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\allies_190.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\allies_191.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\allies_192.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\allies_193.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\allies_194.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\allies_195.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\allies_196.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\allies_197.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\allies_198.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\allies_199.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\allies_200.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\allies_201.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\allies_202.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\allies_203.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\allies_204.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\allies_205.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\allies_206.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\allies_207.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\allies_208.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\allies_209.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\allies_210.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\allies_211.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\allies_212.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\allies_213.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\allies_214.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\allies_215.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\allies_216.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\allies_217.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\allies_218.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\allies_219.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\allies_220.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\allies_221.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\allies_222.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\allies_223.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Resources\germans.csv">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Resources\allies.csv">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </EmbeddedResource>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

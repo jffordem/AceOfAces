@@ -1,0 +1,47 @@
+
+
+{ "Ctrl+Q", "Cruise then left" },
+{ "Ctrl+W", "" },
+{ "Ctrl+E", "Cruise then right" },
+{ "Ctrl+A", "Stall left" },
+{ "Ctrl+S", "" },
+{ "Ctrl+D", "Stall right" },
+{ "Ctrl+Z", "Wing left" },
+{ "Ctrl+X", "Immleman" },
+{ "Ctrl+C", "Wing right" },
+
+{ "Ctrl+Shift+A", "Weave left/right" },
+{ "Ctrl+Shift+D", "Weave right/left" },
+
+{ "Q", "Left then cruise" },
+{ "W", "Straight" },
+{ "E", "Right then cruise" },
+{ "A", "Slip left" },
+{ "S", "Stall" },
+{ "D", "Slip right" },
+{ "Z", "Turn left" },
+{ "X", "Rotary turn" },
+{ "C", "Turn right" },
+
+{ "Shift+Q", "Fast then left" },
+{ "Shift+W", "Fast" },
+{ "Shift+E", "Fast then right" },
+{ "Shift+A", "Barrel roll left" },
+{ "Shift+S", "Stall" },
+{ "Shift+D", "Barrel roll right" },
+{ "Shift+Z", "Left then fast" },
+{ "Shift+X", "" },
+{ "Shift+C", "Right then fast" },
+
+
+
+
+
+
+
+
+
+
+
+
+
