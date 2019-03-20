@@ -1,0 +1,12 @@
+C:\Users\jffordem\Documents\Visual Studio 2013\Projects\Aces\Aces\bin\Release\Aces.exe.config
+C:\Users\jffordem\Documents\Visual Studio 2013\Projects\Aces\Aces\bin\Release\Resources\germans.csv
+C:\Users\jffordem\Documents\Visual Studio 2013\Projects\Aces\Aces\bin\Release\Resources\allies.csv
+C:\Users\jffordem\Documents\Visual Studio 2013\Projects\Aces\Aces\bin\Release\Aces.exe
+C:\Users\jffordem\Documents\Visual Studio 2013\Projects\Aces\Aces\bin\Release\Aces.pdb
+C:\Users\jffordem\Documents\Visual Studio 2013\Projects\Aces\Aces\obj\Release\Aces.csprojResolveAssemblyReference.cache
+C:\Users\jffordem\Documents\Visual Studio 2013\Projects\Aces\Aces\obj\Release\Aces.MainForm.resources
+C:\Users\jffordem\Documents\Visual Studio 2013\Projects\Aces\Aces\obj\Release\Aces.Properties.Resources.resources
+C:\Users\jffordem\Documents\Visual Studio 2013\Projects\Aces\Aces\obj\Release\Aces.csproj.GenerateResource.Cache
+C:\Users\jffordem\Documents\Visual Studio 2013\Projects\Aces\Aces\obj\Release\Aces.exe
+C:\Users\jffordem\Documents\Visual Studio 2013\Projects\Aces\Aces\obj\Release\Aces.pdb
+C:\Users\jffordem\Documents\Visual Studio 2013\Projects\Aces\Aces\obj\Release\Aces.InputPageDialogBox.resources
