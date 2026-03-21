@@ -1,6 +1,6 @@
 // src/components/CockpitView.tsx
 
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
 
 interface CockpitViewProps {
   page: number;
@@ -9,6 +9,11 @@ interface CockpitViewProps {
 const CockpitView: React.FC<CockpitViewProps> = ({ page }) => {
   const [src, setSrc] = useState(`/images/allies_${page}.png`);
   const [failed, setFailed] = useState(false);
+
+  useEffect(() => {
+    setSrc(`/images/allies_${page}.png`);
+    setFailed(false);
+  }, [page]);
 
   const handleError = () => {
     if (src.endsWith('.png')) {

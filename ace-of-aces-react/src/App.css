@@ -68,3 +68,17 @@
   color: #333;
   margin-bottom: 1rem;
 }
+
+.enemy-selector {
+  margin-bottom: 1rem;
+}
+
+.enemy-selector label {
+  margin-right: 0.5rem;
+  font-weight: bold;
+}
+
+.enemy-selector select {
+  padding: 0.4rem 0.6rem;
+  font-size: 1rem;
+}
