@@ -11,6 +11,7 @@ import { EnemyPilot } from './models/enemyPilot';
 import { EnemyAce } from './models/enemyAce';
 import { Player } from './models/types';
 import { ManeuverConstants } from './models/maneuvers';
+import { getManeuverDetails } from './models/maneuvers';
 
 const maneuvers = Object.values(ManeuverConstants);
 
@@ -58,6 +59,12 @@ function App() {
     };
     loadBooks();
   }, [enemyType]);
+
+  const fastManeuvers = maneuvers.filter(m => getManeuverDetails(m)?.speed === 'fast');
+  const slowManeuvers = maneuvers.filter(m => getManeuverDetails(m)?.speed === 'slow');
+  const leftManeuvers = maneuvers.filter(m => getManeuverDetails(m)?.direction === 'left' && getManeuverDetails(m)?.speed === 'cruise');
+  const rightManeuvers = maneuvers.filter(m => getManeuverDetails(m)?.direction === 'right' && getManeuverDetails(m)?.speed === 'cruise');
+  const straightManeuvers = maneuvers.filter(m => getManeuverDetails(m)?.direction === 'straight' && getManeuverDetails(m)?.speed === 'cruise');
 
   const handleEnemyTypeChange = (newType: EnemyType) => {
     setEnemyType(newType);
@@ -129,9 +136,48 @@ function App() {
         </select>
       </div>
 
-      <CockpitView page={page} />
+      <div className="game-layout">
+        <div className="fast-maneuvers">
+          {fastManeuvers.map(maneuver => (
+            <button key={maneuver} onClick={() => handleManeuverSelect(maneuver)} disabled={!GameLogic.canDoManeuver(player, lastPlayerManeuver, maneuver)}>
+              {maneuver}
+            </button>
+          ))}
+        </div>
+        <div className="left-maneuvers">
+          {leftManeuvers.map(maneuver => (
+            <button key={maneuver} onClick={() => handleManeuverSelect(maneuver)} disabled={!GameLogic.canDoManeuver(player, lastPlayerManeuver, maneuver)}>
+              {maneuver}
+            </button>
+          ))}
+        </div>
+        <div className="cockpit">
+          <CockpitView page={page} />
+          <div className="straight-maneuvers">
+            {straightManeuvers.map(maneuver => (
+              <button key={maneuver} onClick={() => handleManeuverSelect(maneuver)} disabled={!GameLogic.canDoManeuver(player, lastPlayerManeuver, maneuver)}>
+                {maneuver}
+              </button>
+            ))}
+          </div>
+        </div>
+        <div className="right-maneuvers">
+          {rightManeuvers.map(maneuver => (
+            <button key={maneuver} onClick={() => handleManeuverSelect(maneuver)} disabled={!GameLogic.canDoManeuver(player, lastPlayerManeuver, maneuver)}>
+              {maneuver}
+            </button>
+          ))}
+        </div>
+        <div className="slow-maneuvers">
+          {slowManeuvers.map(maneuver => (
+            <button key={maneuver} onClick={() => handleManeuverSelect(maneuver)} disabled={!GameLogic.canDoManeuver(player, lastPlayerManeuver, maneuver)}>
+              {maneuver}
+            </button>
+          ))}
+        </div>
+      </div>
+
       <StatusDisplay player={player} enemy={enemy} page={page} enemyManeuver={enemyManeuver} allies={allies} />
-      <ManeuverButtons maneuvers={maneuvers} player={player} lastManeuver={lastPlayerManeuver} onManeuverSelect={handleManeuverSelect} />
     </div>
   );
 }
