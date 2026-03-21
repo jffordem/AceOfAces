@@ -20,7 +20,8 @@ function parseCsv(filePath) {
         const maneuver = data[0];
         const pages = {};
         for (let i = 1; i <= 223; i++) {
-          pages[i] = parseInt(data[i], 10);
+          const val = parseInt(data[i], 10);
+          pages[i] = isNaN(val) ? 0 : val; // Handle invalid numbers
         }
         results[maneuver] = pages;
       })
