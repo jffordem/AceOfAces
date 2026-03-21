@@ -12,14 +12,21 @@
   gap: 1rem;
 }
 
+.cockpit-view {
+  width: min(50vw, 600px);
+  margin: 0 auto;
+}
+
 .cockpit-view img {
-  max-width: 100%;
+  width: 100%;
   height: auto;
   border: 2px solid #333;
   border-radius: 8px;
+  display: block;
 }
 
 .placeholder {
+  width: 100%;
   padding: 2rem;
   border: 2px solid #333;
   border-radius: 8px;

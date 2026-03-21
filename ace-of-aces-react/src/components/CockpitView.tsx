@@ -1,33 +1,35 @@
 // src/components/CockpitView.tsx
 
-import React from 'react';
+import { useState } from 'react';
 
 interface CockpitViewProps {
   page: number;
 }
 
 const CockpitView: React.FC<CockpitViewProps> = ({ page }) => {
-  // Placeholder for image. In real app, load from public/images/allies_${page}.png
+  const [src, setSrc] = useState(`/images/allies_${page}.png`);
+  const [failed, setFailed] = useState(false);
+
+  const handleError = () => {
+    if (src.endsWith('.png')) {
+      setSrc(`/images/allies_${page}.jpg`);
+      return;
+    }
+
+    setFailed(true);
+  };
+
   return (
     <div className="cockpit-view">
-      <img
-        src={`/images/allies_${page}.png`}
-        alt={`Cockpit view page ${page}`}
-        onError={(e) => {
-          e.currentTarget.style.display = 'none';
-          const parent = e.currentTarget.parentElement;
-          if (parent && !parent.querySelector('.placeholder')) {
-            const placeholder = document.createElement('div');
-            placeholder.className = 'placeholder';
-            placeholder.textContent = `Cockpit View - Page ${page} (Image not available)`;
-            placeholder.style.padding = '2rem';
-            placeholder.style.border = '2px solid #333';
-            placeholder.style.borderRadius = '8px';
-            placeholder.style.backgroundColor = '#f9f9f9';
-            parent.appendChild(placeholder);
-          }
-        }}
-      />
+      {!failed ? (
+        <img
+          src={src}
+          alt={`Cockpit view page ${page}`}
+          onError={handleError}
+        />
+      ) : (
+        <div className="placeholder">Cockpit View - Page {page} (Image not available)</div>
+      )}
     </div>
   );
 };
