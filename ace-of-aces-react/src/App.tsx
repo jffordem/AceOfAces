@@ -8,41 +8,9 @@ import { GameLogic } from './services/gameLogic';
 import { Human } from './models/player';
 import { EnemyPilot } from './models/enemyPilot';
 import { Player } from './models/types';
+import { ManeuverConstants } from './models/maneuvers';
 
-const maneuvers = [
-  "Cruise then left",
-  "Stall left",
-  "Stall right",
-  "Cruise then right",
-  "Weave right-left",
-  "Slip left",
-  "Cruise then left",
-  "Stall left",
-  "Stall",
-  "Slip left",
-  "Straight",
-  "Slip left",
-  "Slip right",
-  "Straight",
-  "Stall left",
-  "Stall right",
-  "Turn left",
-  "Weave left-right",
-  "Stall",
-  "Stall right",
-  "Turn right",
-  "Rotary turn",
-  "Immleman",
-  "Turn right",
-  "Wing right",
-  "Fast then left",
-  "Left then fast",
-  "Fast",
-  "Barrel roll left",
-  "Barrel roll right",
-  "Fast then right",
-  "Right then fast",
-];
+const maneuvers = Object.values(ManeuverConstants);
 
 function App() {
   const [allies, setAllies] = useState<Book | null>(null);
