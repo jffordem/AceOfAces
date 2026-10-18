@@ -2,47 +2,71 @@
 
 This file provides guidance to Claude Code (claude.ai/code) when working with code in this repository.
 
-## Overview
+## Project Overview
 
-A single-player adaptation of the WWI picture-book dogfight game *Ace of Aces*. The repo holds two implementations of the same game:
+This is an adaptation of the board game "Ace of Aces" — a two-player WWI dogfight game where each player navigates a picture book by choosing maneuvers each turn. The computer plays the opponent. The project has two implementations:
 
-- `Aces/` — the original C# Windows Forms app (`Aces.sln`, Visual Studio 2013+). Treat it as the reference implementation.
-- `ace-of-aces-react/` — an in-progress TypeScript/React (Vite) port that reproduces the WinForms control and display logic. Most active work happens here.
+1. **`Aces/`** — Original C# Windows Forms app (`Aces.sln`, Visual Studio 2013+; legacy, reference only)
+2. **`ace-of-aces-react/`** — Active TypeScript/React rewrite (the current focus)
 
-The rules from the original books are in `beginner-game-rules.md`, `intermediate-game-rules.md` and `advanced-game-rules.md`. Only the basic rules are implemented; the advanced ones (ammunition, altitude, airspeed, inclination, power dive) are future work.
+Read `readme.md` for application structure. Read `MIGRATION_PLAN.md` for the migration strategy from C# to React (steps 1–10 are complete as of the current branch). The rules from the original books are in `beginner-game-rules.md`, `intermediate-game-rules.md` and `advanced-game-rules.md`. Only the basic rules are implemented; the advanced ones (ammunition, altitude, airspeed, inclination, power dive) are future work.
 
-## Commands (React app, run from `ace-of-aces-react/`)
+## Running the React App
 
-- Dev server (Docker, hot reload): `docker-compose up --build` → http://localhost:5173
-- Production (nginx): `docker-compose -f docker-compose.prod.yml build --no-cache` then `docker-compose -f docker-compose.prod.yml up -d` → http://localhost
-- Without Docker: `npm install`, `npm run dev`, `npm run build` (`tsc && vite build`), `npm run lint`
-- Regenerate book data after editing the CSVs: `node src/data/parseCsv.js` (rewrites `src/data/books.ts`)
+All development is Docker-based. From `ace-of-aces-react/`:
 
-There is no test suite, and no ESLint config file is checked in, so `npm run lint` will not work until one is added.
+```bash
+# Development (hot reload at http://localhost:5173)
+docker-compose up --build
 
-## Architecture
+# Production build (http://localhost)
+docker-compose -f docker-compose.prod.yml down
+docker-compose -f docker-compose.prod.yml build --no-cache
+docker-compose -f docker-compose.prod.yml up -d
+```
 
-### Books: the core data model
-Each player has a "book" with 223 pages. A book is a table keyed by maneuver name (plus the state rows `Attack`, `Damage`, `Tail`, `Range`) that maps page number → value. For maneuver rows the value is the next page number. The source data is `allies.csv` / `germans.csv`, which exist in both `Aces/Resources/` and `ace-of-aces-react/src/data/`. In React the CSVs are **not** read at runtime: `parseCsv.js` bakes them into the generated `books.ts` (~200KB). Don't edit `books.ts` by hand.
+To run without Docker (requires Node 18+):
+```bash
+cd ace-of-aces-react
+npm install
+npm run dev
+```
 
-Page **223** is the "out of range" sentinel and ends the game.
+Other scripts: `npm run build` (`tsc && vite build`), `npm run preview`. `npm run lint` is defined, but no ESLint config file is checked in, so it won't work until one is added. There is no test suite.
 
-### Turn resolution (`GameLogic.getNextPage`, mirrors `MainForm` in C#)
-1. Look up the enemy's maneuver in the **germans** book from the current page to get a mid-page.
-2. Look up the player's maneuver in the **allies** book from the mid-page to get the result.
-3. If the result is 223, try the other order (allies first, then germans).
+Regenerate the book data after editing the CSVs: `node src/data/parseCsv.js` (run it from `ace-of-aces-react/`; it rewrites `src/data/books.ts`).
 
-Damage comes from the allies book at the new page: the enemy takes `Attack`, and the player takes `enemy.getDamage(Damage)`. The `getDamage` implementation depends on the opponent type, so the Trainer takes no damage. Both sides start with 8 hit points. New games start on a random page from `GameLogic.startPages`.
+## React App Architecture
 
-### Maneuver restrictions (`GameLogic.canDoManeuver`)
-Maneuver metadata (direction, difficult, speed) lives in `models/maneuvers.ts`, which mirrors `Maneuvers.cs`. Difficult maneuvers are disabled at ≤4 hit points. After a difficult maneuver, the next one must be non-difficult or the same maneuver.
+The app is a Vite + React 18 + TypeScript single-page app. All game state lives in `App.tsx` via `useState`.
 
-### Pilots / AI (`Player` interface)
-`Human` (its moves come from the UI), `EnemyPilot` (picks moves by page direction under difficulty and speed rules), `EnemyAce` (a pre-scripted choice per page) and `Trainer` (cycles a fixed pattern, takes no damage). Each one maps 1:1 to a C# class of the same name. When you change AI behavior, keep the two implementations consistent unless the divergence is intentional.
+**Data flow:**
+- `src/data/books.ts` — Pre-generated lookup tables (auto-generated from `allies.csv` / `germans.csv`). Each book is keyed by row name and maps page → value. Maneuver rows give the next page; the state rows are `Attack`, `Damage`, `Tail` and `Range`. Never edit by hand.
+- `src/services/book.ts` — `Book` class wraps the lookup tables; exposes `lookup`, `lookupInt`, `lookupBool`, `lookupPage`.
+- `src/services/gameLogic.ts` — `GameLogic` static class: `newGame` (random start page from `startPages`), `getNextPage`, `calculateDamage`, `canDoManeuver`, `isGameOver`.
+- `src/models/types.ts` — Core interfaces: `Player`, `ManeuverDetails`, `GameState`.
+- `src/models/maneuvers.ts` — `ManeuverConstants` (25 named maneuvers), `ManeuverDetailsMap` (direction/speed/difficult per maneuver), helper functions.
+- `src/models/player.ts` — Abstract `Pilot`, concrete `Human`.
+- `src/models/enemyPilot.ts` — `EnemyPilot`: direction-based AI using a per-page lookup table.
+- `src/models/enemyAce.ts` — `EnemyAce`: stronger AI with hand-coded preferred maneuvers per page (pages 1–27 have real entries; pages 28–223 all default to "Straight" — this is an incomplete migration artifact).
+- `src/models/trainer.ts` — `Trainer`: cycles through a fixed pattern; takes no damage (for practice).
 
-### React UI
-`App.tsx` holds all game state in `useState` hooks and drives the turn loop through the static `GameLogic` service. `components/` contains presentational pieces only. `CockpitView` loads `/images/allies_{page}.png` and falls back to `.jpg`. The page images live in `public/images/`, and the prod Dockerfile copies `public/` into the nginx root.
+Each model has a C# counterpart of the same name in `Aces/` (`Maneuvers.cs`, `Book.cs`, `EnemyPilot.cs`, etc.). When you change game or AI behavior, keep the two implementations consistent unless the divergence is intentional.
 
-## Notes
+**Turn loop (in `App.tsx` `handleManeuverSelect`):**
+1. Enemy picks a maneuver (`GameLogic.getEnemyManeuver`), re-picking with player's direction info if the German book says `Tail=true` for the current page.
+2. `GameLogic.getNextPage` cross-references both books. It looks up the enemy's maneuver in the germans book to get a mid-page, then the player's maneuver in the allies book from that mid-page. If the result is 223, it tries again in the opposite order (allies first, then germans).
+3. `GameLogic.calculateDamage` reads `Attack` and `Damage` from the allies book; player receives `enemy.getDamage(damage)`, enemy receives `attack`.
+4. Game-over check triggers an alert and auto-restarts.
+
+**Page images:** Served from `/images/allies_{page}.png` (or `.jpg` fallback) out of `public/images/`. The dev image includes them via the volume mount, and `Dockerfile.prod` copies `public/` into the nginx root.
+
+**Maneuver button layout:** Buttons are grouped by speed (`fast`, `slow`) and direction+cruise (`left`, `straight`, `right`) and positioned around the cockpit image via CSS grid in `App.css`.
+
+## Key Constraints
+
+- The CSV files in `src/data/` are the canonical source for all page transitions and game data; `books.ts` is derived from them.
+- `EnemyAce` only has meaningful AI for pages 1–27. Pages 28–223 all play "Straight" — this is a known gap from the migration.
+- Page 223 is the sentinel for "out of range" game over.
+- Players start with 8 hit points. `canDoManeuver` blocks difficult maneuvers when HP ≤ 4, and blocks chaining two *different* difficult maneuvers in succession.
 - `ace-of-aces-react/dist/` is committed build output.
-- `readme.md` is the user-facing description; its "Code Structure" section documents the C# classes in more detail.
