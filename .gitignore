@@ -53,3 +53,8 @@ modules.order
 Module.symvers
 Mkfile.old
 dkms.conf
+
+# Node / Vite (ace-of-aces-react)
+node_modules/
+ace-of-aces-react/dist/
+ace-of-aces-react.bak/
