@@ -69,4 +69,4 @@ Each model has a C# counterpart of the same name in `Aces/` (`Maneuvers.cs`, `Bo
 - `EnemyAce` only has meaningful AI for pages 1–27. Pages 28–223 all play "Straight" — this is a known gap from the migration.
 - Page 223 is the sentinel for "out of range" game over.
 - Players start with 8 hit points. `canDoManeuver` blocks difficult maneuvers when HP ≤ 4, and blocks chaining two *different* difficult maneuvers in succession.
-- `ace-of-aces-react/dist/` is committed build output.
+- `ace-of-aces-react/dist/` is build output and is gitignored; `Dockerfile.prod` builds it inside the container.
